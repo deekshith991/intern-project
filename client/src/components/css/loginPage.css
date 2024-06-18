@@ -1,12 +1,10 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-.LOGINPAGE {
-    font-family: 'Poppins', Arial, sans-serif;
+.LOGINPAGE,
+.REGISTER {
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
-    height: 100vh;
+    padding: 10px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +19,7 @@
 }
 
 h1 {
+    text-align: center;
     color: rgb(13, 3, 41);
     margin: 5px;
     font-weight: bold;
@@ -49,6 +48,7 @@ form {
     margin-top: 20px;
 }
 
+select[id="role"],
 input[type="text"],
 input[type="password"] {
     width: 90%;
@@ -58,6 +58,7 @@ input[type="password"] {
     border-radius: 5px;
 }
 
+button[id="register-btn"],
 button[id="login-btn"] {
     width: 100%;
     padding: 10px;
@@ -69,26 +70,11 @@ button[id="login-btn"] {
     font-weight: 600;
 }
 
+button[id="register-btn"]:hover,
 button[id="login-btn"]:hover {
     background-color: #45a049;
 }
 
 #register-link {
     text-align: center;
-}
-
-.image-container {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.img {
-    width: 100px;
 }
