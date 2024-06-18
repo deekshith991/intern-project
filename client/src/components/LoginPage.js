@@ -1,17 +1,20 @@
+// LoginPage.js
 import React from 'react';
 import { useAuth } from './AuthContext';
 
-export default function LoginPage() {
+const LoginPage = () => {
+    const { login } = useAuth();
 
-
+    const handleLogin = () => {
+        login();
+    };
 
     return (
-        <div id="LoginCard">
-            <form onSubmit={handleLogin}>
-                <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                <button type="submit">Login</button>
-            </form>
+        <div>
+            <h2>Login Page</h2>
+            <button onClick={handleLogin}>Login</button>
         </div>
     );
-}
+};
+
+export default LoginPage;
