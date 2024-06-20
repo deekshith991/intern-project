@@ -1,0 +1,212 @@
+[
+    {
+        "Account": "Job Seeker",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "securepassword",
+        "phone": "1234567890",
+        "address": "123 Main St",
+        "pincode": "123456"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "password": "strongpassword",
+        "phone": "1987654321",
+        "address": "456 Oak Ave",
+        "pincode": "543210"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "email": "michael.johnson@example.com",
+        "password": "safepassword",
+        "phone": "1122334455",
+        "address": "789 Elm Blvd",
+        "pincode": "678901"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Emily",
+        "lastName": "Brown",
+        "email": "emily.brown@example.com",
+        "password": "password123",
+        "phone": "1654321876",
+        "address": "321 Pine Ln",
+        "pincode": "246801"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "David",
+        "lastName": "Wilson",
+        "email": "david.wilson@example.com",
+        "password": "p@ssw0rd",
+        "phone": "9876543210",
+        "address": "987 Cedar Rd",
+        "pincode": "135790"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Sarah",
+        "lastName": "Miller",
+        "email": "sarah.miller@example.com",
+        "password": "securepass",
+        "phone": "1123456789",
+        "address": "654 Birch Ave",
+        "pincode": "975310"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Chris",
+        "lastName": "Taylor",
+        "email": "chris.taylor@example.com",
+        "password": "p@ssword123",
+        "phone": "1987654321",
+        "address": "789 Pine St",
+        "pincode": "543210"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Anna",
+        "lastName": "Anderson",
+        "email": "anna.anderson@example.com",
+        "password": "strongpass",
+        "phone": "1555123456",
+        "address": "456 Maple Dr",
+        "pincode": "678901"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Kevin",
+        "lastName": "Moore",
+        "email": "kevin.moore@example.com",
+        "password": "p@ssw0rd456",
+        "phone": "1122334455",
+        "address": "123 Elm St",
+        "pincode": "246801"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Jessica",
+        "lastName": "Garcia",
+        "email": "jessica.garcia@example.com",
+        "password": "password456",
+        "phone": "1654321876",
+        "address": "987 Oak Blvd",
+        "pincode": "975310"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Mark",
+        "lastName": "Martinez",
+        "email": "mark.martinez@example.com",
+        "password": "securepass789",
+        "phone": "1987654321",
+        "address": "654 Cedar Ave",
+        "pincode": "135790"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Laura",
+        "lastName": "Robinson",
+        "email": "laura.robinson@example.com",
+        "password": "strongpassword789",
+        "phone": "1123456789",
+        "address": "321 Birch Ln",
+        "pincode": "543210"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Brian",
+        "lastName": "Young",
+        "email": "brian.young@example.com",
+        "password": "p@ssword789",
+        "phone": "1555123456",
+        "address": "789 Pine Rd",
+        "pincode": "678901"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Rachel",
+        "lastName": "Hernandez",
+        "email": "rachel.hernandez@example.com",
+        "password": "securepass123",
+        "phone": "1122334455",
+        "address": "456 Maple St",
+        "pincode": "246801"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Jason",
+        "lastName": "Lopez",
+        "email": "jason.lopez@example.com",
+        "password": "password789",
+        "phone": "1654321876",
+        "address": "123 Elm Ave",
+        "pincode": "975310"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Kimberly",
+        "lastName": "Perez",
+        "email": "kimberly.perez@example.com",
+        "password": "p@ss789",
+        "phone": "1987654321",
+        "address": "987 Oak Ln",
+        "pincode": "135790"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Eric",
+        "lastName": "Sanchez",
+        "email": "eric.sanchez@example.com",
+        "password": "strong789",
+        "phone": "1123456789",
+        "address": "654 Cedar Blvd",
+        "pincode": "543210"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Megan",
+        "lastName": "Gonzalez",
+        "email": "megan.gonzalez@example.com",
+        "password": "password789",
+        "phone": "1555123456",
+        "address": "321 Birch Rd",
+        "pincode": "678901"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Steven",
+        "lastName": "Rivera",
+        "email": "steven.rivera@example.com",
+        "password": "securepass789",
+        "phone": "1122334455",
+        "address": "789 Pine Dr",
+        "pincode": "246801"
+    },
+    {
+        "Account": "Job Seeker",
+        "firstName": "Stephanie",
+        "lastName": "Cook",
+        "email": "stephanie.cook@example.com",
+        "password": "p@ss789",
+        "phone": "1654321876",
+        "address": "456 Maple Ave",
+        "pincode": "975310"
+    },
+    {
+        "Account": "Employer",
+        "firstName": "Patrick",
+        "lastName": "Collins",
+        "email": "patrick.collins@example.com",
+        "password": "password789",
+        "phone": "1987654321",
+        "address": "123 Elm Blvd",
+        "pincode": "135790"
+    }
+]

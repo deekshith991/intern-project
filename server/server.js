@@ -13,7 +13,8 @@ app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/registration');
+const DB_NAME = "internship-Project-dev";
+mongoose.connect(`mongodb://localhost:27017/${DB_NAME}`);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -23,7 +24,16 @@ db.once('open', () => {
 
 // Task Schema
 const RegisteruserSchema = new mongoose.Schema({
-    name: {
+    Account: {
+        type: String,
+        required: true,
+        enum: ["Job Seeker", "Employer"],
+    },
+    firstName: {
+        type: String,
+        required: true,
+    },
+    lastName: {
         type: String,
         required: true,
     },
@@ -36,45 +46,47 @@ const RegisteruserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    confirmpassword: {
-        type: String,
-        required: true,
-    },
-    phone: {
+    Phone: {
         type: Number,
         required: true,
         minLenght: 8,
         maxLength: 32,
     },
-    role: {
+    Address: {
         type: String,
-        required: true,
-        enum: ["Job Seeker", "Employer"],
+        maxLength: 100
+    },
+    Pincode: {
+        type: Number,
+        maxLength: 6
     },
     createdAt: {
         type: Date,
         default: Date.now,
     },
 });
-const Registeruser = mongoose.model('Registeruser', RegisteruserSchema);
+const COLLECTION_NAME = "users";
+const Registeruser = mongoose.model(COLLECTION_NAME, RegisteruserSchema);
 
 //post the register data
 app.use(express.json());
-app.post('./register', async (req, res) => {
+app.post('/register', async (req, res) => {
     try {
-        const { username, email, password, confirmpassword } = req.body;
+        const { Account, firstName, lastName, email, password, Phone, Address, Pincode } = req.body;
         let exist = await Registeruser.findOne({ email })
         if (exist) {
             return res.status(400).send('User Already Exist')
         }
-        if (password !== confirmpassword) {
-            return res.status(400).send('Password asre not matching')
-        }
+
         let newUser = new Registeruser({
-            username,
+            Account,
+            firstName,
+            lastName,
             email,
             password,
-            confirmpassword,
+            Phone,
+            Address,
+            Pincode
         })
         await newUser.save();
         res.status(200).send('Registerd Successfully')
