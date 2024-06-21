@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
-const middleware = require('./middleware')
+const middleware = require('./middleware');
+const Registeruser = require('./modules/users.js');
+const AddJOB = require('./modules/job.js')
 
 const app = express();
 const PORT = 4000;
@@ -23,50 +25,7 @@ db.once('open', () => {
 });
 
 // Task Schema
-const RegisteruserSchema = new mongoose.Schema({
-    Account: {
-        type: String,
-        required: true,
-        enum: ["Job Seeker", "Employer"],
-    },
-    firstName: {
-        type: String,
-        required: true,
-    },
-    lastName: {
-        type: String,
-        required: true,
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true,
-    },
-    password: {
-        type: String,
-        required: true,
-    },
-    Phone: {
-        type: Number,
-        required: true,
-        minLenght: 8,
-        maxLength: 32,
-    },
-    Address: {
-        type: String,
-        maxLength: 100
-    },
-    Pincode: {
-        type: Number,
-        maxLength: 6
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    },
-});
-const COLLECTION_NAME = "users";
-const Registeruser = mongoose.model(COLLECTION_NAME, RegisteruserSchema);
+
 
 //post the register data
 app.use(express.json());
@@ -95,7 +54,23 @@ app.post('/register', async (req, res) => {
         console.log(err)
         return res.status(500).send('Internet Server Error')
     }
-})
+});
+
+app.post('/addjob', async (req, res) => {
+    try {
+        const { company, position, status, workType, workLocation } = req.body;
+
+        let newJOB = new AddJOB({
+            company, position, status, workType, workLocation
+        })
+        await newJOB.save();
+        res.status(200).send('Registerd Successfully')
+    }
+    catch (err) {
+        console.log(err)
+        return res.status(500).send('Internet Server Error')
+    }
+});
 
 
 app.listen(PORT, () => {

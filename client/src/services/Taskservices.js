@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:4000/register";
+const apiUrl = "http://localhost:4000";
 
 const headers = {
     'Content-Type': 'application/json'
@@ -9,7 +9,7 @@ const headers = {
 alert("Registering");
 
 export const RegisterUSER = async (data) => {
-    return await axios.post(apiUrl, data, { headers })
+    return await axios.post(`${apiUrl}/register`, data, { headers })
         .then(response => {
             console.log('POST request successful');
             console.log('Response data:', response.data);
