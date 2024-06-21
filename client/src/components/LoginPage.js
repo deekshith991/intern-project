@@ -45,11 +45,11 @@ const LoginPage = () => {
                     <div className="login-box">
                         <form onSubmit={handleLogin}>
                             <div className="form-group">
-                                <label for="username">Username</label>
+                                <label htmlFor="username">Username</label>
                                 <input type="text" className="form-control" id="username" placeholder="Enter username" name="username" value={formData.username} onChange={handleChange} />
                             </div>
                             <div className="form-group">
-                                <label for="password">Password</label>
+                                <label htmlFor="password">Password</label>
                                 <input type="password" className="form-control" id="password" placeholder="Enter password" name="password" value={formData.password} onChange={handleChange} />
                             </div>
                             <button className="btn btn-primary btn-block" id="login-btn" type="submit">Login</button>

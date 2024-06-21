@@ -39,7 +39,6 @@ const RegisterPage = () => {
         console.log(result.data);
 
 
-        // RegisterUserDB()
 
     }
 
