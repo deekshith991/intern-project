@@ -96,51 +96,6 @@ app.post('/register', async (req, res) => {
         return res.status(500).send('Internet Server Error')
     }
 })
-//login 
-app.post('./login', async (req, res) => {
-    try {
-        const { email, password } = req.body;
-        let exist = await Registeruser.findOne({ email })
-        if (!exist) {
-            return res.status(400).send('User Not Found')
-        }
-        if (exist.password !== password) {
-            return res.status(400).send('Invalid credentials');
-        }
-        let payload = {
-            user: {
-                id: exist.id
-            }
-        }
-        //jwt token
-        jwt.sign(payload, 'jwtSecret', { expiresIn: 3600000 },
-            (err, token) => {
-                if (err) throw err;
-                return res.json({ token })
-            }
-        )
-    }
-    catch (err) {
-        console.log(err)
-        return res.status(500).send('sever Error')
-    }
-})
-
-
-//Router
-app.get('/myprofile', middleware, async (req, res) => {
-    try {
-        let exist = await Registeruser.findById(req.user.id)
-        if (!exist) {
-            return res.status(400).send('User Not Found')
-        }
-        res.json(exist)
-    }
-    catch (err) {
-        console.log(err);
-        return res.status(500).send('server Error')
-    }
-})
 
 
 app.listen(PORT, () => {
