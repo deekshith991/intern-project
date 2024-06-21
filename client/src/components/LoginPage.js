@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
 import './css/loginPage.css';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 
 const LoginPage = () => {
@@ -21,19 +22,32 @@ const LoginPage = () => {
         setFormData({ ...formData, [name]: value });
     }
 
-    const USER = "asd";
-    const PASS = "asd";
+    const handleLogin = async (e) => {
+        e.preventDefault();
 
-    const handleLogin = () => {
+        try {
+            const response = await axios.post('http://localhost:4000/api/login', {
+                "email": formData.username,
+                "password": formData.password
+            });
+            alert('done post');
 
-        if (formData.username === USER && formData.password === PASS) {
-            login();
-            navigate('/profile');
-        } else {
-            alert("Hacker");
+            const { token } = response.data; // Assuming your backend returns a token
+            sessionStorage.setItem('token', token);
+            alert(token);
+            // Store token in localStorage or state (depending on your app's design)
+            // Example using login function from AuthContext
+            // Redirect or navigate to another page after successful login
+            navigate('/userprofile'); // Redirect to dashboard page after successful login
+        } catch (error) {
+            console.error('Login error:', error.response.data);
+            // Handle login error (show error message, etc.)
         }
 
-    };
+    }
+
+
+
 
     return (
         <div className='LOGINPAGE'>

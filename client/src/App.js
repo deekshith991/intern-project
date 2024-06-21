@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import LoginPage from './components/LoginPage';
 import LogoutPage from './components/LogoutPage';
 // import { AuthProvider } from './components/AuthContext';
@@ -8,6 +10,32 @@ import RegisterPage from './components/RegisterPage';
 import AddJOB from './components/AddJobPage';
 
 const App = () => {
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const token = localStorage.getItem('token');
+
+      if (token) {
+        try {
+          const res = await axios.get('/api/users', {
+            headers: {
+              'x-auth-token': token,
+            },
+          });
+          console.log(res.data);
+          setUser(res.data);
+        } catch (error) {
+          console.error(error.response.data.msg);
+        }
+      }
+    };
+
+    fetchUser();
+  }, []);
+
+
   return (
     <Router>
       {/* <AuthProvider> */}
@@ -20,6 +48,7 @@ const App = () => {
           <Route path="/logout" element={<LogoutPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path='/issuejob' element={<AddJOB />} />
+          <Route path="userprofile" element={<UserProfilePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/*" element={<HomePage />} />
         </Routes>

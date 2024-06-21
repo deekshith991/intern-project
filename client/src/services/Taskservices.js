@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:4000";
+const apiUrl = "http://localhost:4000/api";
 
 const headers = {
     'Content-Type': 'application/json'
@@ -17,6 +17,18 @@ export const RegisterUSER = async (data) => {
         .catch(error => {
             console.error('Error making POST request:', error);
         });
+}
+
+export const loginUSER = async ({ username, password }) => {
+    try {
+        const response = await axios.post(`${apiUrl}/login`, { username, password });
+        localStorage.setItem('token', response.data.token);
+        console.log('setting the session token');
+        alert('login success');
+    } catch (error) {
+        console.error(error.response.data.msg)
+    }
+
 }
 
 

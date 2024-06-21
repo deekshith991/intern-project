@@ -5,9 +5,9 @@
         "lastName": "Doe",
         "email": "john.doe@example.com",
         "password": "securepassword",
-        "phone": "1234567890",
-        "address": "123 Main St",
-        "pincode": "123456"
+        "Phone": "1234567890",
+        "Address": "123 Main St",
+        "Pincode": "123456"
     },
     {
         "Account": "Employer",
@@ -15,9 +15,9 @@
         "lastName": "Smith",
         "email": "jane.smith@example.com",
         "password": "strongpassword",
-        "phone": "1987654321",
-        "address": "456 Oak Ave",
-        "pincode": "543210"
+        "Phone": "1987654321",
+        "Address": "456 Oak Ave",
+        "Pincode": "543210"
     },
     {
         "Account": "Job Seeker",
@@ -25,9 +25,9 @@
         "lastName": "Johnson",
         "email": "michael.johnson@example.com",
         "password": "safepassword",
-        "phone": "1122334455",
-        "address": "789 Elm Blvd",
-        "pincode": "678901"
+        "Phone": "1122334455",
+        "Address": "789 Elm Blvd",
+        "Pincode": "678901"
     },
     {
         "Account": "Job Seeker",
@@ -35,9 +35,9 @@
         "lastName": "Brown",
         "email": "emily.brown@example.com",
         "password": "password123",
-        "phone": "1654321876",
-        "address": "321 Pine Ln",
-        "pincode": "246801"
+        "Phone": "1654321876",
+        "Address": "321 Pine Ln",
+        "Pincode": "246801"
     },
     {
         "Account": "Employer",
@@ -45,9 +45,9 @@
         "lastName": "Wilson",
         "email": "david.wilson@example.com",
         "password": "p@ssw0rd",
-        "phone": "9876543210",
-        "address": "987 Cedar Rd",
-        "pincode": "135790"
+        "Phone": "9876543210",
+        "Address": "987 Cedar Rd",
+        "Pincode": "135790"
     },
     {
         "Account": "Job Seeker",
@@ -55,9 +55,9 @@
         "lastName": "Miller",
         "email": "sarah.miller@example.com",
         "password": "securepass",
-        "phone": "1123456789",
-        "address": "654 Birch Ave",
-        "pincode": "975310"
+        "Phone": "1123456789",
+        "Address": "654 Birch Ave",
+        "Pincode": "975310"
     },
     {
         "Account": "Employer",
@@ -65,9 +65,9 @@
         "lastName": "Taylor",
         "email": "chris.taylor@example.com",
         "password": "p@ssword123",
-        "phone": "1987654321",
-        "address": "789 Pine St",
-        "pincode": "543210"
+        "Phone": "1987654321",
+        "Address": "789 Pine St",
+        "Pincode": "543210"
     },
     {
         "Account": "Job Seeker",
@@ -75,9 +75,9 @@
         "lastName": "Anderson",
         "email": "anna.anderson@example.com",
         "password": "strongpass",
-        "phone": "1555123456",
-        "address": "456 Maple Dr",
-        "pincode": "678901"
+        "Phone": "1555123456",
+        "Address": "456 Maple Dr",
+        "Pincode": "678901"
     },
     {
         "Account": "Employer",
@@ -85,9 +85,9 @@
         "lastName": "Moore",
         "email": "kevin.moore@example.com",
         "password": "p@ssw0rd456",
-        "phone": "1122334455",
-        "address": "123 Elm St",
-        "pincode": "246801"
+        "Phone": "1122334455",
+        "Address": "123 Elm St",
+        "Pincode": "246801"
     },
     {
         "Account": "Job Seeker",
@@ -95,9 +95,9 @@
         "lastName": "Garcia",
         "email": "jessica.garcia@example.com",
         "password": "password456",
-        "phone": "1654321876",
-        "address": "987 Oak Blvd",
-        "pincode": "975310"
+        "Phone": "1654321876",
+        "Address": "987 Oak Blvd",
+        "Pincode": "975310"
     },
     {
         "Account": "Employer",
@@ -105,9 +105,9 @@
         "lastName": "Martinez",
         "email": "mark.martinez@example.com",
         "password": "securepass789",
-        "phone": "1987654321",
-        "address": "654 Cedar Ave",
-        "pincode": "135790"
+        "Phone": "1987654321",
+        "Address": "654 Cedar Ave",
+        "Pincode": "135790"
     },
     {
         "Account": "Job Seeker",
@@ -115,9 +115,9 @@
         "lastName": "Robinson",
         "email": "laura.robinson@example.com",
         "password": "strongpassword789",
-        "phone": "1123456789",
-        "address": "321 Birch Ln",
-        "pincode": "543210"
+        "Phone": "1123456789",
+        "Address": "321 Birch Ln",
+        "Pincode": "543210"
     },
     {
         "Account": "Job Seeker",
@@ -125,9 +125,9 @@
         "lastName": "Young",
         "email": "brian.young@example.com",
         "password": "p@ssword789",
-        "phone": "1555123456",
-        "address": "789 Pine Rd",
-        "pincode": "678901"
+        "Phone": "1555123456",
+        "Address": "789 Pine Rd",
+        "Pincode": "678901"
     },
     {
         "Account": "Employer",
@@ -135,9 +135,9 @@
         "lastName": "Hernandez",
         "email": "rachel.hernandez@example.com",
         "password": "securepass123",
-        "phone": "1122334455",
-        "address": "456 Maple St",
-        "pincode": "246801"
+        "Phone": "1122334455",
+        "Address": "456 Maple St",
+        "Pincode": "246801"
     },
     {
         "Account": "Employer",
@@ -145,9 +145,9 @@
         "lastName": "Lopez",
         "email": "jason.lopez@example.com",
         "password": "password789",
-        "phone": "1654321876",
-        "address": "123 Elm Ave",
-        "pincode": "975310"
+        "Phone": "1654321876",
+        "Address": "123 Elm Ave",
+        "Pincode": "975310"
     },
     {
         "Account": "Job Seeker",
@@ -155,9 +155,9 @@
         "lastName": "Perez",
         "email": "kimberly.perez@example.com",
         "password": "p@ss789",
-        "phone": "1987654321",
-        "address": "987 Oak Ln",
-        "pincode": "135790"
+        "Phone": "1987654321",
+        "Address": "987 Oak Ln",
+        "Pincode": "135790"
     },
     {
         "Account": "Employer",
@@ -165,9 +165,9 @@
         "lastName": "Sanchez",
         "email": "eric.sanchez@example.com",
         "password": "strong789",
-        "phone": "1123456789",
-        "address": "654 Cedar Blvd",
-        "pincode": "543210"
+        "Phone": "1123456789",
+        "Address": "654 Cedar Blvd",
+        "Pincode": "543210"
     },
     {
         "Account": "Job Seeker",
@@ -175,9 +175,9 @@
         "lastName": "Gonzalez",
         "email": "megan.gonzalez@example.com",
         "password": "password789",
-        "phone": "1555123456",
-        "address": "321 Birch Rd",
-        "pincode": "678901"
+        "Phone": "1555123456",
+        "Address": "321 Birch Rd",
+        "Pincode": "678901"
     },
     {
         "Account": "Employer",
@@ -185,9 +185,9 @@
         "lastName": "Rivera",
         "email": "steven.rivera@example.com",
         "password": "securepass789",
-        "phone": "1122334455",
-        "address": "789 Pine Dr",
-        "pincode": "246801"
+        "Phone": "1122334455",
+        "Address": "789 Pine Dr",
+        "Pincode": "246801"
     },
     {
         "Account": "Job Seeker",
@@ -195,9 +195,9 @@
         "lastName": "Cook",
         "email": "stephanie.cook@example.com",
         "password": "p@ss789",
-        "phone": "1654321876",
-        "address": "456 Maple Ave",
-        "pincode": "975310"
+        "Phone": "1654321876",
+        "Address": "456 Maple Ave",
+        "Pincode": "975310"
     },
     {
         "Account": "Employer",
@@ -205,8 +205,8 @@
         "lastName": "Collins",
         "email": "patrick.collins@example.com",
         "password": "password789",
-        "phone": "1987654321",
-        "address": "123 Elm Blvd",
-        "pincode": "135790"
+        "Phone": "1987654321",
+        "Address": "123 Elm Blvd",
+        "Pincode": "135790"
     }
 ]
