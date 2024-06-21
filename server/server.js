@@ -2,11 +2,17 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const Registeruser = require('./modules/users.js');
+
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const User = require('./modules/users.js');
 const AddJOB = require('./modules/job.js')
 
 const app = express();
 const PORT = 4000;
+const mongoURI = `mongodb://localhost:27017/`;
+const DB_NAME = "internship-Project-dev";
+
 
 //backend and frontend connect
 app.use(cors({ origin: "*" }));
@@ -15,8 +21,7 @@ app.use(express.json());
 
 
 // MongoDB connection
-const DB_NAME = "internship-Project-dev";
-mongoose.connect(`mongodb://localhost:27017/${DB_NAME}`);
+mongoose.connect(`${mongoURI}/${DB_NAME}`);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -68,6 +73,8 @@ db.once('open', () => {
 //         return res.status(500).send('Internet Server Error')
 //     }
 // });
+
+
 
 
 app.listen(PORT, () => {
