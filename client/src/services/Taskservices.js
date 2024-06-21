@@ -6,7 +6,7 @@ const headers = {
     'Content-Type': 'application/json'
 };
 
-alert("Registering");
+// alert("Registering");
 
 export const RegisterUSER = async (data) => {
     return await axios.post(`${apiUrl}/register`, data, { headers })

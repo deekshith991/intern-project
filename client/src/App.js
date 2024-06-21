@@ -5,6 +5,7 @@ import LogoutPage from './components/LogoutPage';
 import UserProfilePage from './components/UserProfilePage';
 import HomePage from './components/HomePage';
 import RegisterPage from './components/RegisterPage';
+import AddJOB from './components/AddJobPage';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/logout" element={<LogoutPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path='/issuejob' element={<AddJOB />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/*" element={<HomePage />} />
         </Routes>

@@ -1,4 +1,5 @@
 .LOGINPAGE,
+.ISSUEJOB,
 .REGISTER {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -48,6 +49,7 @@ form {
     margin-top: 20px;
 }
 
+select[id="workType"],
 select[id="account"],
 input[type="text"],
 input[type="number"],
@@ -60,6 +62,7 @@ input[type="password"] {
     border-radius: 5px;
 }
 
+button[id="issue-btn"],
 button[id="register-btn"],
 button[id="login-btn"] {
     width: 100%;
@@ -72,6 +75,7 @@ button[id="login-btn"] {
     font-weight: 600;
 }
 
+button[id="issue-btn"],
 button[id="register-btn"]:hover,
 button[id="login-btn"]:hover {
     background-color: #45a049;

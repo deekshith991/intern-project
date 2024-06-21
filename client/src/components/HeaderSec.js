@@ -22,6 +22,9 @@ const HeaderSec = () => {
                     <li>
                         <Link to="register">Register</Link>
                     </li>
+                    <li>
+                        <Link to="issuejob">Issue a job</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
