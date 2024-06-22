@@ -16,7 +16,7 @@ const HeaderSec = () => {
                 <Link to="/issuejob">Issue a job</Link>
             </nav>
             <div className="contact">
-                <Link to='/logout'>Login</Link>
+                <Link to='/logout'>Logout</Link>
             </div>
         </header>
     )

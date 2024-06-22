@@ -42,3 +42,14 @@ export const RegisterJOB = async (data) => {
         });
 }
 
+export const getJOBS = async () => {
+    return (await axios.get(`${apiUrl}/getjobs`))
+}
+
+export const getUSER = async (id) => {
+    return await axios.get(`${apiUrl}/user/${id}`);
+};
+
+export const getJOB = async (id) => {
+    return await axios.get(`${apiUrl}/jobs/${id}`);
+};
