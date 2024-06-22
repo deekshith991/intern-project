@@ -1,0 +1,162 @@
+[
+    {
+        "company": "Tech Innovations Inc.",
+        "position": "Software Engineer",
+        "workType": "full-time",
+        "workLocation": "San Francisco, CA",
+        "salary": 110000,
+        "contact": "jobs@techinnovations.com"
+    },
+    {
+        "company": "Global Solutions Ltd.",
+        "position": "Marketing Specialist",
+        "workType": "part-time",
+        "workLocation": "New York, NY",
+        "salary": 55000,
+        "contact": "hr@globalsolutions.com"
+    },
+    {
+        "company": "Data Analytics Co.",
+        "position": "Data Scientist Intern",
+        "workType": "internship",
+        "workLocation": "Remote",
+        "salary": 25000,
+        "contact": "careers@dataanalyticsco.com"
+    },
+    {
+        "company": "HealthTech Innovations",
+        "position": "Medical Sales Representative",
+        "workType": "full-time",
+        "workLocation": "Chicago, IL",
+        "salary": 90000,
+        "contact": "recruitment@healthtech.com"
+    },
+    {
+        "company": "Education First Academy",
+        "position": "English Teacher",
+        "workType": "part-time",
+        "workLocation": "Boston, MA",
+        "salary": 30000,
+        "contact": "teach@educationfirst.com"
+    },
+    {
+        "company": "Financial Services Group",
+        "position": "Investment Analyst",
+        "workType": "full-time",
+        "workLocation": "London, UK",
+        "salary": 95000,
+        "contact": "careers@finservicesgroup.co.uk"
+    },
+    {
+        "company": "Creative Design Studios",
+        "position": "Graphic Design Intern",
+        "workType": "internship",
+        "workLocation": "Los Angeles, CA",
+        "salary": 15000,
+        "contact": "design@creativedesign.com"
+    },
+    {
+        "company": "Green Energy Solutions",
+        "position": "Environmental Engineer",
+        "workType": "full-time",
+        "workLocation": "Seattle, WA",
+        "salary": 100000,
+        "contact": "jobs@greenenergysolutions.com"
+    },
+    {
+        "company": "Tech Start Innovations",
+        "position": "Software Developer",
+        "workType": "part-time",
+        "workLocation": "Remote",
+        "salary": 65000,
+        "contact": "hr@techstart.com"
+    },
+    {
+        "company": "Global Marketing Solutions",
+        "position": "Social Media Manager",
+        "workType": "full-time",
+        "workLocation": "Miami, FL",
+        "salary": 75000,
+        "contact": "recruit@globalsolutions.com"
+    },
+    {
+        "company": "Healthcare Innovations",
+        "position": "Nurse Practitioner",
+        "workType": "full-time",
+        "workLocation": "Houston, TX",
+        "salary": 90000,
+        "contact": "careers@healthcareinnovations.com"
+    },
+    {
+        "company": "Education Plus Academy",
+        "position": "Math Tutor",
+        "workType": "part-time",
+        "workLocation": "San Diego, CA",
+        "salary": 35000,
+        "contact": "teach@educationplus.com"
+    },
+    {
+        "company": "Tech Solutions Group",
+        "position": "IT Support Specialist",
+        "workType": "full-time",
+        "workLocation": "Dallas, TX",
+        "salary": 60000,
+        "contact": "careers@techsolutionsgroup.com"
+    },
+    {
+        "company": "Design Concepts Inc.",
+        "position": "UX/UI Designer",
+        "workType": "part-time",
+        "workLocation": "Chicago, IL",
+        "salary": 45000,
+        "contact": "design@designconcepts.com"
+    },
+    {
+        "company": "BioTech Innovations",
+        "position": "Research Scientist",
+        "workType": "full-time",
+        "workLocation": "Boston, MA",
+        "salary": 100000,
+        "contact": "recruitment@biotechinnovations.com"
+    },
+    {
+        "company": "Marketing Solutions Co.",
+        "position": "Digital Marketing Specialist",
+        "workType": "full-time",
+        "workLocation": "Remote",
+        "salary": 70000,
+        "contact": "hr@marketingsolutions.com"
+    },
+    {
+        "company": "Software Development Hub",
+        "position": "Frontend Developer",
+        "workType": "part-time",
+        "workLocation": "Austin, TX",
+        "salary": 55000,
+        "contact": "jobs@softwarehub.com"
+    },
+    {
+        "company": "Energy Solutions Ltd.",
+        "position": "Renewable Energy Engineer",
+        "workType": "full-time",
+        "workLocation": "San Francisco, CA",
+        "salary": 110000,
+        "contact": "careers@energysolutions.com"
+    },
+    {
+        "company": "Education Tech Innovators",
+        "position": "Instructional Designer",
+        "workType": "part-time",
+        "workLocation": "Seattle, WA",
+        "salary": 50000,
+        "contact": "jobs@edutechinnovators.com"
+    },
+    {
+        "company": "Financial Advisors Inc.",
+        "position": "Financial Analyst",
+        "workType": "full-time",
+        "workLocation": "New York, NY",
+        "salary": 85000,
+        "contact": "careers@financialadvisors.com"
+    }
+]

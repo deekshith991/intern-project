@@ -74,6 +74,7 @@ db.once('open', () => {
 //     }
 // });
 
+
 app.post('/api/register', async (req, res) => {
     try {
         const { Account, firstName, lastName, email, password, Phone, Address, Pincode } = req.body;
@@ -162,6 +163,53 @@ app.post('/api/login', async (req, res) => {
 });
 
 
+app.get('/api/getjobs', async (req, res) => {
+    try {
+        const tasks = await jobs.find();
+        res.send(tasks);
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+
+
+app.post('/api/registerjob', async (req, res) => {
+    try {
+
+        let newjob = new AddJOB(req.body)
+        await newjob.save();
+        res.status(200).send('success');
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
+app.get('/api/getjobs', async (req, res) => {
+    try {
+        const data = await AddJOB.find();
+        res.status(200).send(data);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+
+    }
+})
+
+
+app.get('/api/user/:id', async (req, res) => {
+    try {
+        const user = await Users.findById(req.params.id);
+        if (!task) {
+            res.status(404).send('Task not found');
+        } else {
+            res.send(task);
+        }
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
 
 
 app.listen(PORT, () => {

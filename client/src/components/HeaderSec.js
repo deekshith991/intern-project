@@ -1,33 +1,24 @@
 import { Link } from "react-router-dom";
+import './css/header.css'
+
+
 
 const HeaderSec = () => {
 
     return (
-        <div>
-            <h1>Header</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/logout">Logout</Link>
-                    </li>
-                    <li>
-                        <Link to="/profile">Profile</Link>
-                    </li>
-                    <li>
-                        <Link to="register">Register</Link>
-                    </li>
-                    <li>
-                        <Link to="issuejob">Issue a job</Link>
-                    </li>
-                </ul>
+        <header>
+            <Link to="./#" className='logo'>
+                <img src="logo.jpeg" className="img" alt="Logo" />
+            </Link>
+            <nav className="navbar">
+                <Link to="/profile">Profile</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/issuejob">Issue a job</Link>
             </nav>
-        </div>
+            <div className="contact">
+                <Link to='/logout'>Login</Link>
+            </div>
+        </header>
     )
 }
 

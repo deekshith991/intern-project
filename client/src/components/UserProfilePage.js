@@ -2,6 +2,7 @@
 import React from 'react';
 import { useAuth } from './AuthContext';
 import HeaderSec from './HeaderSec';
+import Footer from './FooterSec';
 
 const UserProfilePage = () => {
     const { isLoggedIn } = useAuth();
@@ -9,12 +10,8 @@ const UserProfilePage = () => {
     return (
         <div>
             <HeaderSec />
-            <h2>Profile Page</h2>
-            {isLoggedIn ? (
-                <p>Welcome! You are logged in.</p>
-            ) : (
-                <p>You are not logged in.</p>
-            )}
+            <h1>{user.firstName} {user.lastName}</h1>
+            <Footer />
         </div>
     );
 };

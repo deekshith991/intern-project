@@ -31,4 +31,14 @@ export const loginUSER = async ({ username, password }) => {
 
 }
 
+export const RegisterJOB = async (data) => {
+    return await axios.post(`${apiUrl}/registerjob`, data, { headers })
+        .then(response => {
+            console.log('POST request successful');
+            console.log('Response data:', response.data);
+        })
+        .catch(error => {
+            console.error('Error making POST request:', error);
+        });
+}
 

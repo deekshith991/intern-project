@@ -24,6 +24,7 @@ const App = () => {
               'x-auth-token': token,
             },
           });
+          user = res.data
           console.log(res.data);
           setUser(res.data);
         } catch (error) {
@@ -50,7 +51,6 @@ const App = () => {
           <Route path='/issuejob' element={<AddJOB />} />
           <Route path="userprofile" element={<UserProfilePage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/*" element={<HomePage />} />
         </Routes>
       </div>
       {/* </AuthProvider> */}

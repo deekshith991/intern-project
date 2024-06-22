@@ -30,8 +30,8 @@ const AddJOB = () => {
             contact: regData.contact
         }
 
-        // const result = RegisterJOB(formData);
-        // console.log(result.data);
+        const result = RegisterJOB(formData);
+        console.log(result.data);
 
 
 
